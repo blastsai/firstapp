@@ -8,38 +8,29 @@
 
     <TextView
         android:id="@+id/donateSubtitle"
-        android:layout_width="386dp"
-        android:layout_height="28dp"
-        android:layout_below="@+id/donateTitle"
-        android:layout_alignEnd="@+id/donateTitle"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/donateSubtitle"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintBottom_toTopOf="@+id/paymentMethod"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/donateTitle"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
 
     <Button
         android:id="@+id/donateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:onClick="donateButtonPressed"
         android:text="@string/donateButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paymentMethod"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
 
     <RadioGroup
         android:id="@+id/paymentMethod"
@@ -129,22 +120,21 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="97dp"
-        android:layout_height="24dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="44dp"
         android:text="@string/total"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintBaseline_toBaselineOf="@+id/totalSoFar"
-        app:layout_constraintEnd_toStartOf="@+id/totalSoFar"
-        app:layout_constraintHorizontal_bias="0.992"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paymentAmount" />
 
     <TextView
         android:id="@+id/totalSoFar"
-        android:layout_width="wrap_content"
+        android:layout_width="97dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
         android:text="@string/totalSoFar"
         android:textAppearance="?android:attr/textAppearanceMedium"
         app:layout_constraintBottom_toBottomOf="parent"

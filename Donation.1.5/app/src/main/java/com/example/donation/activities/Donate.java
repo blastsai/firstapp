@@ -19,6 +19,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.donation.databinding.ActivityMainBinding;
 
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -44,6 +46,8 @@ public class Donate extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

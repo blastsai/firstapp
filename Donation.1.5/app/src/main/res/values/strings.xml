@@ -11,4 +11,5 @@
     <string name="totalSoFar">$ Total</string>
     <string name="menuReport">Report</string>
     <string name="reportTitle">Report</string>
+    <string name="Donate">Donate\n</string>
 </resources>
