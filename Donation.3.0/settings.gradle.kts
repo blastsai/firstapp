@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Donation.1.5"
+rootProject.name = "Donation.3.0"
 include(":app")

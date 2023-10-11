@@ -21,7 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.Report">
+        <activity
+            android:name=".activities.Report">
+        </activity>
+        <activity
+            android:name=".activities.Base">
+        </activity>
+        <activity
+            android:name=".models.Donation">
         </activity>
     </application>
 
